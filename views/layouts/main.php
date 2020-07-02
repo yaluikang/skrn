@@ -16,64 +16,96 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-    <meta charset="<?= Yii::$app->charset ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:300,400,600,700">
+    <link rel="stylesheet" href="icons/fontawesome/css/fontawesome-all.min.css"><!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="icons/Iconsmind__Ultimate_Pack/Line%20icons/styles.min.css">
     <?php $this->head() ?>
 </head>
-<body>
 <?php $this->beginBody() ?>
-
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
-    ]);
-    NavBar::end();
-    ?>
-
+<body>
+<header id="masthead-pro">
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
-    </div>
-</div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+        <nav id="site-navigation-pro">
+            <ul class="sf-menu">
+                <li class="normal-item-pro current-menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="normal-item-pro">
+                    <a href="dashboard-home.html">New Releases</a>
+                    <!-- Sub-Menu Example >
+                    <ul class="sub-menu">
+                        <li class="normal-item-pro">
+                            <a href="#!">Sub-menu item 1</a>
+                        </li>
+                        <li class="normal-item-pro">
+                            <a href="#!">Sub-menu item 2</a>
+                        </li>
+                        <li class="normal-item-pro">
+                            <a href="#!">Sub-menu item 3</a>
+                        </li>
+                    </ul>
+                    < End Sub-Menu example -->
+                </li>
+                <li class="normal-item-pro">
+                    <a href="signup-step1.html">Pricing Plans</a>
+                </li>
+                <li class="normal-item-pro">
+                    <a href="faqs.html">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="btn btn-header-pro noselect" data-toggle="modal" data-target="#LoginModal" role="button">Sign In</button>
+
+        <div id="mobile-bars-icon-pro" class="noselect"><i class="fas fa-bars"></i></div>
+
+        <div class="clearfix"></div>
+    </div><!-- close .container -->
+
+    <nav id="mobile-navigation-pro">
+
+        <ul id="mobile-menu-pro">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="dashboard-home.html">New Releases</a>
+                <!-- Mobile Sub-Menu Example >
+                <ul>
+                    <li class="normal-item-pro">
+                        <a href="#!">Sub-menu item 1</a>
+                    </li>
+                    <li class="normal-item-pro">
+                        <a href="#!">Sub-menu item 2</a>
+                    </li>
+                    <li class="normal-item-pro">
+                        <a href="#!">Sub-menu item 3</a>
+                    </li>
+                </ul>
+                < End Mobile Sub-Menu Example -->
+            </li>
+            <li>
+                <a href="signup-step1.html">Pricing Plans</a>
+            </li>
+            <li>
+                <a href="faqs.html">FAQs</a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+
+        <button class="btn btn-mobile-pro btn-green-pro noselect" data-toggle="modal" data-target="#LoginModal" role="button">Sign In</button>
+
+    </nav>
+</header>
+
+<?= $content ?>
 
 <?php $this->endBody() ?>
 </body>
