@@ -22,7 +22,8 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/bootstrap.css',
-        'css/landing-page-styles.css'
+        'css/landing-page-styles.css',
+        'css/style.css'
     ];
     public $js = [
         'js/libs/jquery-3.3.1.min.js',
