@@ -29,7 +29,7 @@ class AppAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
-        'js/libs/jquery-3.3.1.min.js',
+        /*'js/libs/jquery-3.3.1.min.js',*/
         'js/libs/popper.min.js',
         'js/libs/bootstrap.min.js',
         'js/navigation.js',
