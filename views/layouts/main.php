@@ -7,6 +7,7 @@ use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
@@ -28,15 +29,15 @@ AppAsset::register($this);
 <header id="masthead-pro">
     <div class="container">
 
-        <h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
+        <h1><a href="<?php echo Url::to(['site/index']); ?>"><img src="images/logo.png" alt="Logo"></a></h1>
 
         <nav id="site-navigation-pro">
             <ul class="sf-menu">
                 <li class="normal-item-pro current-menu-item">
-                    <a href="index.html">Home</a>
+                    <a href="<?php echo Url::to(['site/index']); ?>">Home</a>
                 </li>
                 <li class="normal-item-pro">
-                    <a href="dashboard-home.html">New Releases</a>
+                    <a href="<?php echo Url::to(['site/dashboard-home']); ?>">New Releases</a>
                     <!-- Sub-Menu Example >
                     <ul class="sub-menu">
                         <li class="normal-item-pro">
@@ -52,10 +53,10 @@ AppAsset::register($this);
                     < End Sub-Menu example -->
                 </li>
                 <li class="normal-item-pro">
-                    <a href="signup-step1.html">Pricing Plans</a>
+                    <a href="<?php echo Url::to(['site/signup-step1']); ?>">Pricing Plans</a>
                 </li>
                 <li class="normal-item-pro">
-                    <a href="faqs.html">FAQs</a>
+                    <a href="<?php echo Url::to(['site/faqs']); ?>">FAQs</a>
                 </li>
             </ul>
         </nav>
