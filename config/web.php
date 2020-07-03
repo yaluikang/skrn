@@ -15,10 +15,11 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-                '/' => 'site/index',
-                '<action:\w+>' => 'site/<action>'
-            ]
+            'suffix'=>'/',
+            'rules'=>array(
+                ''=>'site/index',
+                '<action>'=>'site/<action>',
+            )
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
