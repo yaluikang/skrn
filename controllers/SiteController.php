@@ -14,12 +14,17 @@ class SiteController extends Controller
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->render('home');
     }
 
     public function actionDashboardHome()
     {
         /*return $this->render('dashboard-home');*/
         echo 'dashboard-home';
+    }
+
+    public function actionFaqs()
+    {
+        return $this->render('faqs');
     }
 }
