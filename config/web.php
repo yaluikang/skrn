@@ -4,7 +4,7 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'lukankin.ru',
+    'id' => 'skrn',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -17,7 +17,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 '/' => 'site/index',
-                /*'<action:\w+>' => 'site/<action>'*/
+                '<action:\w+>' => 'site/<action>'
             ]
         ],
         'request' => [
