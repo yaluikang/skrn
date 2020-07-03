@@ -15,9 +15,8 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'suffix'=>'/',
             'rules'=>array(
-                ''=>'site/index',
+                '/'=>'site/index',
                 '<action>'=>'site/<action>',
             )
         ],
