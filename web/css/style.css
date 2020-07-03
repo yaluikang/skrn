@@ -3230,7 +3230,7 @@ footer#footer-pro ul.social-icons-pro {
 .progression-pricing-section-background {
 	margin:-16px 0px -50px 0px;/* Fills gaps between HR and Footer */
 	padding:20px 0px 115px 0px;
-	background-image:url("images/demo/plans-background.jpg");
+	background-image:url("../images/demo/plans-background.jpg");
 	background-repeat: no-repeat;
 	background-position:bottom center;
 	background-size: cover;
