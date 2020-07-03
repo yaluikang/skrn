@@ -23,7 +23,9 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'css/bootstrap.css',
         'css/landing-page-styles.css',
-        'css/style.css'
+        'css/style.css',
+        'icons/fontawesome/css/fontawesome-all.min.css',
+        'icons/Iconsmind__Ultimate_Pack/Line%20icons/styles.min.css'
     ];
     public $js = [
         'js/libs/jquery-3.3.1.min.js',
