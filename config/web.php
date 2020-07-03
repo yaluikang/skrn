@@ -28,7 +28,7 @@ $config = [
             'class' => 'yii\caching\DummyCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\UserIdentity',
+            'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
