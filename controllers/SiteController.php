@@ -27,4 +27,9 @@ class SiteController extends Controller
     {
         return $this->render('faqs');
     }
+
+    public function actionSignup()
+    {
+        return $this->render('signup');
+    }
 }

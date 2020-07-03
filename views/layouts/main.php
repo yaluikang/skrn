@@ -53,7 +53,7 @@ AppAsset::register($this);
                     < End Sub-Menu example -->
                 </li>
                 <li class="normal-item-pro">
-                    <a href="<?php echo Url::to(['site/signup-step1']); ?>">Pricing Plans</a>
+                    <a href="<?php echo Url::to(['site/signup']); ?>">Pricing Plans</a>
                 </li>
                 <li class="normal-item-pro">
                     <a href="<?php echo Url::to(['site/faqs']); ?>">FAQs</a>
