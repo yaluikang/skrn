@@ -16,8 +16,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                /*'/' => 'site/index',*/
-                '/site/<action:\w+>' => '/site/<action>'
+                '/' => 'site/index',
+                /*'<action:\w+>' => 'site/<action>'*/
             ]
         ],
         'request' => [
