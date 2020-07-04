@@ -32,7 +32,7 @@ class DashboardAsset extends AssetBundle
         'js/afterglow.min.js',
         'js/circle-progress.min.js',
         'js/jquery-asRange.min.js',
-        'js/jquery.flexslider-min',
+        'js/jquery.flexslider-min.js',
         'js/navigation.js',
         'js/script-dashboard.js',
         'js/script.js'
