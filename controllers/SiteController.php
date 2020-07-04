@@ -12,6 +12,8 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+    public $layout = 'main';
+
     public function actionIndex()
     {
         return $this->render('home');
@@ -19,8 +21,8 @@ class SiteController extends Controller
 
     public function actionDashboardHome()
     {
-        /*return $this->render('dashboard-home');*/
-        echo 'dashboard-home';
+        $this->layout = 'dashboard';
+        return $this->render('dashboard-home');
     }
 
     public function actionFaqs()
