@@ -3,15 +3,15 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use app\assets\DashboardAsset;
 use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
 
-AppAsset::register($this);
+DashboardAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ AppAsset::register($this);
 <div id="sidebar-bg">
 
     <header id="videohead-pro" class="sticky-header">
-        <div id="video-logo-background"><a href="dashboard-home.html"><img src="images/logo-video-layout.png" alt="Logo"></a></div>
+        <div id="video-logo-background"><a href="<?php echo Url::to(['site/index']); ?>"><img src="images/logo-video-layout.png" alt="Logo"></a></div>
 
         <div id="video-search-header">
             <div id="search-icon-more"></div>
