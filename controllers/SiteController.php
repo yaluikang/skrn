@@ -14,16 +14,15 @@ class SiteController extends Controller
 {
     public $layout = 'main';
 
+    //The main block of site
+
+    //nav menu
+
     public function actionIndex()
     {
         return $this->render('home');
     }
 
-    public function actionDashboardHome()
-    {
-        $this->layout = 'dashboard';
-        return $this->render('dashboard-home');
-    }
 
     public function actionFaqs()
     {
@@ -34,4 +33,39 @@ class SiteController extends Controller
     {
         return $this->render('signup');
     }
+
+    //The dashboard block of site
+
+    //nav-menu
+
+    public function actionDashboardHome()
+    {
+        $this->layout = 'dashboard';
+        return $this->render('dashboard-home');
+    }
+
+    public function actionDashboardMovies()
+    {
+        $this->layout = 'dashboard';
+        return $this->render('dashboard-movies');
+    }
+
+    public function actionDashboardPlaylists()
+    {
+        $this->layout = 'dashboard';
+        return $this->render('dashboard-playlists');
+    }
+
+    public function actionDashboardNewArrivals()
+    {
+        $this->layout = 'dashboard';
+        return $this->render('dashboard-new-arrivals');
+    }
+
+    public function actionDashboardComingSoon()
+    {
+        $this->layout = 'dashboard';
+        return $this->render('dashboard-coming-soon');
+    }
+
 }
