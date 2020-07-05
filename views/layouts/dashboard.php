@@ -231,31 +231,31 @@ DashboardAsset::register($this);
     <nav id="sidebar-nav"><!-- Add class="sticky-sidebar-js" for auto-height sidebar -->
         <ul id="vertical-sidebar-nav" class="sf-menu">
             <li class="normal-item-pro current-menu-item">
-                <a href="dashboard-home.html">
+                <a href="<?php echo Url::to(['site/dashboard-home']); ?>">
                     <span class="icon-Old-TV"></span>
                     TV Series
                 </a>
             </li>
             <li class="normal-item-pro">
-                <a href="dashboard-movies.html">
+                <a href="<?php echo Url::to(['site/dashboard-movies']); ?>">
                     <span class="icon-Reel"></span>
                     Movies
                 </a>
             </li>
             <li class="normal-item-pro">
-                <a href="dashboard-playlists.html">
+                <a href="<?php echo Url::to(['site/dashboard-playlists']); ?>">
                     <span class="icon-Movie"></span>
                     Playlists
                 </a>
             </li>
             <li class="normal-item-pro">
-                <a href="dashboard-new-arrivals.html">
+                <a href="<?php echo Url::to(['site/dashboard-new-arrivals']); ?>">
                     <span class="icon-Movie-Ticket"></span>
                     New Arrivals
                 </a>
             </li>
             <li class="normal-item-pro">
-                <a href="dashboard-coming-soon.html">
+                <a href="<?php echo Url::to(['site/dashboard-coming-soon']); ?>">
                     <span class="icon-Clock"></span>
                     Coming Soon
                 </a>
