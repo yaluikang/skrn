@@ -75,10 +75,9 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $movie = MoviesRecord::find()->with('movieHasDirectorsRecord.directorsRecord')->all();
-        $director = $movie[0]->movieHasDirectorsRecord[0]->directorsRecord;
-        $sql = var_dump($movie->prepare(\Yii::$app->db->queryBuilder)->createCommand()->rawSql);
-        echo json_encode( $sql,JSON_UNESCAPED_UNICODE );
+        $movie = MoviesRecord::find()->with('movieHasDirectorsRecord.directorsRecord')->all()->createCommand()->getRawSql();
+        //$director = $movie[0]->movieHasDirectorsRecord[0]->directorsRecord;
+        echo json_encode( $movie,JSON_UNESCAPED_UNICODE );
     }
 
 }
