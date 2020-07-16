@@ -15,7 +15,7 @@ class MoviesRecord extends ActiveRecord
         return 'Movies';
     }
 
-    public function getMovieHasDirectors()
+    public function getMovieHasDirectorsRecord()
     {
         return $this->hasMany(MovieHasDirectorsRecord::class, ['Id' => 'Movie_id']);
     }
