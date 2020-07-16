@@ -2,8 +2,8 @@
 
 namespace app\controllers;
 
-use app\models\MovieHasDirectorsRecord;
-use app\models\MoviesRecord;
+use app\models\MovieDirectors;
+use app\models\Movies;
 use Yii;
 use yii\web\Controller;
 
@@ -75,9 +75,10 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $movie = MoviesRecord::find()->with('movieHasDirectorsRecord.directorsRecord')->createCommand()->getRawSql();
+        $movie = Movies::findOne(1);
+        $director = $movie->directors;
         //$director = $movie[0]->movieHasDirectorsRecord[0]->directorsRecord;
-        echo json_encode( $movie,JSON_UNESCAPED_UNICODE );
+        echo json_encode( $director,JSON_UNESCAPED_UNICODE );
     }
 
 }
