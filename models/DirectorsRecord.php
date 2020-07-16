@@ -14,4 +14,9 @@ class DirectorsRecord
     {
         return 'Directors';
     }
+
+    public function getMovieHasDirectorsRecord()
+    {
+        return $this->hasMany(MovieHasDirectorsRecord::class, ['Director_id' => 'Id']);
+    }
 }
