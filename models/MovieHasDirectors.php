@@ -17,6 +17,6 @@ class MovieHasDirectors
 
     public function getMovies()
     {
-        return $this->hasMany(MoviesRecord::class(), ['Movie_id' => 'Id']);
+        return $this->hasMany(MoviesRecord::className(), ['Movie_id' => 'Id']);
     }
 }
