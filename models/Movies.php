@@ -17,6 +17,6 @@ class Movies extends ActiveRecord
 
     public function getDirectors()
     {
-        return $this->hasMany(Directors::class, ['Id' => 'Director_id'])->viaTable('Movie_has_Directors', ['Movie_id' => 'Id']);
+        return $this->hasMany(Directors::class, ['Id' => 'Director_id'])->viaTable('Movie_has_directors', ['Movie_id' => 'Id']);
     }
 }
