@@ -75,7 +75,8 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $director = MoviesRecord::find()->with('movieHasDirectorsRecord.directorsRecord')->all();
+        $movie = MoviesRecord::find()->with('movieHasDirectorsRecord.directorsRecord')->all();
+        $director = $movie[0]->movieHasDirectorsRecord[0]->directorsRecord;
         echo json_encode( $director[0],JSON_UNESCAPED_UNICODE );
     }
 
