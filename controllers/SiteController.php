@@ -2,13 +2,10 @@
 
 namespace app\controllers;
 
+use app\models\MovieHasDirectors;
+use app\models\MoviesRecord;
 use Yii;
-use yii\filters\AccessControl;
 use yii\web\Controller;
-use yii\web\Response;
-use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
 
 class SiteController extends Controller
 {
@@ -66,6 +63,21 @@ class SiteController extends Controller
     {
         $this->layout = 'dashboard';
         return $this->render('dashboard-coming-soon');
+    }
+
+    //Movies`s element
+
+    public function actionDashboardMovieProfile( $id )
+    {
+        $this->layout = 'dashboard';
+        return $this->render('dashboard-movie-profile');
+    }
+
+    public function actionTest()
+    {
+        $movie = MoviesRecord::findOne(1);
+        $director = $movie->getMovieHasDirectors();
+        echo $director;
     }
 
 }
