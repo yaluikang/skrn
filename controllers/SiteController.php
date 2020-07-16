@@ -77,7 +77,7 @@ class SiteController extends Controller
     {
         $movie = MoviesRecord::findOne(1);
         $director = $movie->movieHasDirectorsRecord;
-        echo $director;
+        echo json_encode( $director,JSON_UNESCAPED_UNICODE );
     }
 
 }
