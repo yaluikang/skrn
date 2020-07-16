@@ -1,9 +1,9 @@
 <?php
 
 namespace app\models;
+use app\models\MovieHasDirectorsRecord;
 use Yii;
 use yii\db\ActiveRecord;
-use app\models\MovieHasDirectors;
 
 class MoviesRecord extends ActiveRecord
 {
@@ -17,7 +17,6 @@ class MoviesRecord extends ActiveRecord
 
     public function getMovieHasDirectors()
     {
-        $class = new MovieHasDirectors();
-        return $this->hasMany(get_class($class), ['Id' => 'Movie_id']);
+        return $this->hasMany(MovieHasDirectorsRecord::class, ['Id' => 'Movie_id']);
     }
 }

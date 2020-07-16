@@ -4,8 +4,9 @@
 namespace app\models;
 
 use app\models\MoviesRecord;
+use yii\db\ActiveRecord;
 
-class MovieHasDirectors
+class MovieHasDirectorsRecord extends ActiveRecord
 {
     /**
      * @return string
@@ -17,7 +18,6 @@ class MovieHasDirectors
 
     public function getMovies()
     {
-        $class = new MoviesRecord();
-        return $this->hasMany(get_class($class), ['Movie_id' => 'Id']);
+        return $this->hasMany(MoviesRecord::class, ['Movie_id' => 'Id']);
     }
 }

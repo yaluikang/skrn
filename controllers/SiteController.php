@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\models\MovieHasDirectors;
+use app\models\MovieHasDirectorsRecord;
 use app\models\MoviesRecord;
 use Yii;
 use yii\web\Controller;
