@@ -4,7 +4,10 @@
 namespace app\models;
 
 
-class DirectorsRecord
+use yii\db\ActiveRecord;
+use app\models\MovieHasDirectorsRecord;
+
+class DirectorsRecord extends ActiveRecord
 {
 
     /**
