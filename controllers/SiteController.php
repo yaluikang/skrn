@@ -77,10 +77,9 @@ class SiteController extends Controller
     {
         $movie = Movies::find()
             ->where(['id' => 1])
-            ->one()
-            ->asArray();
-        //$directors = $movie->directors->asArray();
-        echo json_encode( $movie,JSON_UNESCAPED_UNICODE );
+            ->one();
+        $directors = $movie->directors->asArray();
+        echo json_encode( $directors,JSON_UNESCAPED_UNICODE );
     }
 
 }
