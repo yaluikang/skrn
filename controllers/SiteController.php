@@ -79,7 +79,7 @@ class SiteController extends Controller
             ->where(['id' => 1])
             ->asArray()
             ->all();
-        $directors = $movie->directors;
+        //$directors = $movie->directors;
         echo json_encode( $movie,JSON_UNESCAPED_UNICODE );
     }
 
