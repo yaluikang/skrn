@@ -75,7 +75,9 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $movie = Movies::findOne(1);
+        $movie = Movies::find()
+            ->where(['id' => 1])
+            ->one();
         $directors = $movie->directors;
         echo json_encode( $movie,JSON_UNESCAPED_UNICODE );
     }
