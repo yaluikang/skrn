@@ -78,8 +78,8 @@ class SiteController extends Controller
     {
         $movie = Movies::findOne(1);
         $directors = $movie->directors;
-        $id = $movie->Id;
-        echo json_encode( $directors,JSON_UNESCAPED_UNICODE );
+        $directorsone = $directors[0]->Name;
+        echo json_encode( $directorsone,JSON_UNESCAPED_UNICODE );
     }
 
 }
