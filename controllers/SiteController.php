@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Directors;
 use app\models\MovieDirectors;
 use app\models\Movies;
 use Yii;
@@ -76,9 +77,10 @@ class SiteController extends Controller
     public function actionTest()
     {
         $movie = Movies::findOne(1);
-        //$directors = $movie->directors;
+        $directors = Directors::findOne(1);
+        $directorsId = $directors->Id;
         $id = $movie->Id;
-        echo json_encode( $id,JSON_UNESCAPED_UNICODE );
+        echo json_encode( $directorsId,JSON_UNESCAPED_UNICODE );
     }
 
 }
