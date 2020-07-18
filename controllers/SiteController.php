@@ -75,8 +75,10 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $movie = Movies::findOne(1)->one();
+        $movie = Movies::findOne(1);
         $directors = $movie->directors;
+        Yii::info($movie->Id);
+        parent::actionTest();
         echo json_encode( $movie[0],JSON_UNESCAPED_UNICODE );
     }
 
