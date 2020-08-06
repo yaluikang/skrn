@@ -79,9 +79,10 @@ class SiteController extends Controller
     public function actionTest()
     {
         $movie = Movies::findOne(1);
+        $name = $movie->Name;
         $directors = $movie->directors;
         $directorsone = $directors[0]->Name;
-        echo json_encode( $directorsone,JSON_UNESCAPED_UNICODE );
+        echo json_encode( $name,JSON_UNESCAPED_UNICODE );
     }
 
 }

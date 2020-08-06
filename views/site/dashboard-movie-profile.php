@@ -27,7 +27,7 @@ $directorsone = $directors[0]->Name;
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Director</h4>
-        <div class="content-sidebar-short-description"><?php echo $directorsone; ?>></div>
+        <div class="content-sidebar-short-description"><?php echo $directorsone; ?></div>
     </div><!-- close .content-sidebar-section -->
 
 
