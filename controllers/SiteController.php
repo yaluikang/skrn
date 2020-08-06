@@ -82,7 +82,8 @@ class SiteController extends Controller
         $name = $movie->Name;
         $directors = $movie->directors;
         $directorsone = $directors[0]->Name;
-        echo json_encode( $name,JSON_UNESCAPED_UNICODE );
+        echo $name;
+        //echo json_encode( $name,JSON_UNESCAPED_UNICODE );
     }
 
 }
