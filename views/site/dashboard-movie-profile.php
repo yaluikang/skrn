@@ -3,7 +3,7 @@ $name = $movieInfo->Name;
 $resolution = $movieInfo->Resolution;
 $ageLimit = $movieInfo->Age_limit;
 $releaseDate = $movieInfo->Release_date;
-$length = $movieInfo->length;
+$length = $movieInfo->Length;
 $directors = $movieInfo->directors;
 $directorsone = $directors[0]->Name;
 ?>
