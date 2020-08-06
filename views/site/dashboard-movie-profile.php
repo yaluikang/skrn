@@ -1,5 +1,6 @@
 <?php
-
+$directors = $movieInfo->directors;
+$directorsone = $directors[0]->Name;
 ?>
 <div id="content-sidebar-pro">
 
@@ -21,12 +22,12 @@
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Length</h4>
-        <div class="content-sidebar-short-description">2 hr 43 min</div>
+        <div class="content-sidebar-short-description"><?php $movieInfo->Name; ?></div>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Director</h4>
-        <div class="content-sidebar-short-description">James Wan</div>
+        <div class="content-sidebar-short-description"><?php echo $directorsone; ?>></div>
     </div><!-- close .content-sidebar-section -->
 
 

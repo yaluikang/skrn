@@ -71,8 +71,6 @@ class SiteController extends Controller
 
     public function actionDashboardMovieProfile( $id )
     {
-        //123123123
-        $this->layout = 'dashboard';
         $this->layout = 'dashboard';
         $movieInfo = Movies::findOne($id);
         return $this->render('dashboard-movie-profile', ['movieInfo' => $movieInfo]);
