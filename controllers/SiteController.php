@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Directors;
 use app\models\MovieDirectors;
+use app\models\MovieInfo;
 use app\models\Movies;
 use Yii;
 use yii\web\Controller;
@@ -70,8 +71,11 @@ class SiteController extends Controller
 
     public function actionDashboardMovieProfile( $id )
     {
+        //123123123
         $this->layout = 'dashboard';
-        return $this->render('dashboard-movie-profile');
+        $this->layout = 'dashboard';
+        $movieInfo = Movies::findOne($id);
+        return $this->render('dashboard-movie-profile', ['movieInfo' => $movieInfo]);
     }
 
     public function actionTest()

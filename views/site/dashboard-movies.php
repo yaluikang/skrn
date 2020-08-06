@@ -1,3 +1,7 @@
+<?php
+use yii\helpers\Url;
+
+?>
 <main id="col-main">
 
     <div class="flexslider progression-studios-dashboard-slider progression-studios-full-height-slider">
@@ -217,7 +221,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="item-listing-container-skrn">
-                    <a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+                    <a href="<?php echo Url::to(['site/dashboard-movie-profile?id=1']); ?>"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
                     <div class="item-listing-text-skrn">
                         <div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">The Wild Things Are</a></h6>
                             <div
