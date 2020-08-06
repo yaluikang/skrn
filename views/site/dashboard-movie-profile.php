@@ -1,4 +1,5 @@
 <?php
+$name = $movieInfo->Name;
 $directors = $movieInfo->directors;
 $directorsone = $directors[0]->Name;
 ?>
@@ -22,7 +23,7 @@ $directorsone = $directors[0]->Name;
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Length</h4>
-        <div class="content-sidebar-short-description"><?php $movieInfo->Name; ?></div>
+        <div class="content-sidebar-short-description"><?php $name; ?></div>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
