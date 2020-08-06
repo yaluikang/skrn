@@ -1,7 +1,11 @@
 <?php
 $name = $movieInfo->Name;
-/*$directors = $movieInfo->directors;
-$directorsone = $directors[0]->Name;*/
+$resolution = $movieInfo->Resolution;
+$ageLimit = $movieInfo->Age_limit;
+$releaseDate = $movieInfo->Release_date;
+$length = $movieInfo->length;
+$directors = $movieInfo->directors;
+$directorsone = $directors[0]->Name;
 ?>
 <div id="content-sidebar-pro">
 
@@ -10,25 +14,25 @@ $directorsone = $directors[0]->Name;*/
     </div>
 
     <div class="content-sidebar-section">
-        <h2 class="content-sidebar-sub-header">True Blood</h2>
+        <h2 class="content-sidebar-sub-header"><?php echo $name; ?></h2>
         <ul class="progression-studios-slider-rating">
-            <li>PG-13</li><li>HD</li>
+            <li><?php echo $ageLimit; ?></li><li><?php echo $resolution; ?></li>
         </ul>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Release Date</h4>
-        <div class="content-sidebar-short-description">2 October, 2017 (USA)</div>
+        <div class="content-sidebar-short-description"><?php echo $releaseDate; ?></div>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Length</h4>
-        <div class="content-sidebar-short-description"><?php $name; ?></div>
+        <div class="content-sidebar-short-description"><?php echo $length; ?></div>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Director</h4>
-        <div class="content-sidebar-short-description"><?php //echo $directorsone; ?></div>
+        <div class="content-sidebar-short-description"><?php echo $directorsone; ?></div>
     </div><!-- close .content-sidebar-section -->
 
 
