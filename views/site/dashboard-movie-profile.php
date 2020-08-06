@@ -4,6 +4,7 @@ $resolution = $movieInfo->Resolution;
 $ageLimit = $movieInfo->Age_limit;
 $releaseDate = $movieInfo->Release_date;
 $length = $movieInfo->Length;
+$storyline = $movieInfo->Storyline;
 $directors = $movieInfo->directors;
 $directorsone = $directors[0]->Name;
 ?>
@@ -244,7 +245,7 @@ $directorsone = $directors[0]->Name;
 
         <div class="movie-details-section">
             <h2>Storyline</h2>
-            <p>Mae Holland (Emma Watson) seizes the opportunity of a lifetime when she lands a job with the world's most powerful technology and social media company. Encouraged by the company's founder (Tom Hanks), Mae joins a groundbreaking experiment that pushes the boundaries of privacy, ethics and personal freedom. Her participation in the experiment, and every decision she makes soon starts to affect the lives and futures of her friends, family and that of humanity.</p>
+            <p><?php echo $storyline; ?> </p>
         </div><!-- close .movie-details-section -->
 
         <div class="movie-details-section">
