@@ -7,6 +7,7 @@ $this->registerJsFile('js/Movie-profile.js', ['depends' => [\app\assets\Dashboar
 
 $name = $movieInfo->Name;
 $id = $movieInfo->Id;
+$posterLink = $movieInfo->Poster_link;
 $resolution = $movieInfo->Resolution;
 $ageLimit = $movieInfo->Age_limit;
 $releaseDate = $movieInfo->Release_date;
@@ -14,11 +15,12 @@ $length = $movieInfo->Length;
 $storyline = $movieInfo->Storyline;
 $directors = $movieInfo->directors;
 $directorsone = $directors[0]->Name;
+
 ?>
 <div id="content-sidebar-pro" data-movie-id="<?php echo $id; ?>">
 
     <div id="content-sidebar-image">
-        <img src="http://via.placeholder.com/450x620" alt="Movie Poster">
+        <img src="<?php echo 'images/posters/' . $posterLink ?>" alt="Movie Poster">
     </div>
 
     <div class="content-sidebar-section">
