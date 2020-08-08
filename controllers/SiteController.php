@@ -80,7 +80,7 @@ class SiteController extends Controller
     {
         $movie = Movies::findOne(1);
         $actors = $movie->actors;
-        $actorsone = $actors[0]->Name;
+        $actorsone = count($actors);
         echo json_encode( $actorsone,JSON_UNESCAPED_UNICODE );
     }
 
