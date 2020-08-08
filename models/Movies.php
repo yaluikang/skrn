@@ -22,6 +22,6 @@ class Movies extends ActiveRecord
 
     public function getActors()
     {
-        return $this->hasMany(Actors::class, ['Id' => 'Actors_id'])->viaTable('Movie_has_actors', ['Movie_id' => 'Id']);
+        return $this->hasMany(Actors::class, ['Id' => 'Actor_id'])->viaTable('Movie_has_actors', ['Movie_id' => 'Id']);
     }
 }
