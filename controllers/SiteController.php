@@ -86,7 +86,7 @@ class SiteController extends Controller
 
     //Ajax
 
-    public function actionGetActors( $movieid )
+    public function actionGetactors( $movieid )
     {
         $movie = Movies::findOne( $movieid );
         $count = count( $movie->actors );
