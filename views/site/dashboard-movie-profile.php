@@ -7,6 +7,7 @@ $this->registerJsFile('js/Movie-profile.js', ['depends' => [\app\assets\Dashboar
 
 $name = $movieInfo->Name;
 $id = $movieInfo->Id;
+$previewLink = $movieInfo->Preview_link;
 $posterLink = $movieInfo->Poster_link;
 $resolution = $movieInfo->Resolution;
 $ageLimit = $movieInfo->Age_limit;
@@ -130,7 +131,7 @@ $directorsone = $directors[0]->Name;
 
 <main id="col-main-with-sidebar">
 
-    <div id="movie-detail-header-pro" style="background-image:url('http://via.placeholder.com/1442x775')">
+    <div id="movie-detail-header-pro" style="background-image:url('<?php echo 'images/previews/' . $previewLink ?>')">
 
         <div class="progression-studios-slider-more-options">
             <i class="fas fa-ellipsis-h"></i>
