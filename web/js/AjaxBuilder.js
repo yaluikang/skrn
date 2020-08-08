@@ -91,11 +91,12 @@ class AjaxBuilder extends Site
             }
         });
         this.json = $json;
+        console.log( $json );
         this.controllerOfActions();
     }
 
     controllerOfActions()
-    {
+    {/*
         if( this.getUrl() == 'http://lukankin.ru/setnewcookies' && this.json )
         {
             this.json = JSON.parse( this.json );
@@ -122,8 +123,8 @@ class AjaxBuilder extends Site
                 console.log( 'something' );
                 this.addMovies( this.json, '#colorposter' );
             }
-        }
-        /*}*/
+        }*//*
+        if( )*/
     }
 
 }

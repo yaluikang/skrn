@@ -1,5 +1,7 @@
 <?php
 
+$this->registerJsFile('js/Site.js', ['depends' => [\app\assets\DashboardAsset::class]]);
+$this->registerJsFile('js/AjaxBuilder.js', ['depends' => [\app\assets\DashboardAsset::class]]);
 $this->registerJsFile('js/Movie-profile.js', ['depends' => [\app\assets\DashboardAsset::class]]);
 
 
