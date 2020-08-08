@@ -97,12 +97,11 @@ class AjaxBuilder extends Site
 
     controllerOfActions()
     {
-        console.log( this.getUrl());
         //http://lukankin.ru/getactors?movieid=1
-        let str = 'http://lukankin.ru/getactorttts?movieid=1';
-        let regex = RegExp('http:\/\/lukankin\.ru\/getactors\?movieid');
-        console.log( regex.test(str) );
-        console.log( str.match(/http:\/\/lukankin\.ru\/getactors.*/));
+        if( this.getUrl() == (this.getUrl()).match(/http:\/\/lukankin\.ru\/getactors.*/))
+        {
+            console.log('YES');
+        }
         /*
         if( this.getUrl() == 'http://lukankin.ru/setnewcookies' && this.json )
         {
