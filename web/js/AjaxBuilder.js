@@ -102,7 +102,7 @@ class AjaxBuilder extends Site
         let str = 'http://lukankin.ru/getactors?movieid=1';
         let regex = RegExp('http:\/\/lukankin\.ru\/getactors\?movieid');
         console.log( regex.test(str) );
-        console.log( str.match(/http:\/\/lukankin\.ru\/getactors\?movieid=1/));
+        console.log( str.match(/http:\/\/lukankin\.ru\/getactors.*/));
         /*
         if( this.getUrl() == 'http://lukankin.ru/setnewcookies' && this.json )
         {
