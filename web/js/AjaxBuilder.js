@@ -99,8 +99,8 @@ class AjaxBuilder extends Site
     {
         console.log( this.getUrl());
         //http://lukankin.ru/getactors?movieid=1
-        let str = 'http://lukankin.ru/getactors?';
-        let regex = RegExp('http:\/\/lukankin\.ru\/getactors\?');
+        let str = 'http://lukankin.ru/getactors?movieid';
+        let regex = RegExp('http:\/\/lukankin\.ru\/getactors\?movieid');
         console.log( regex.test(str) );
         /*
         if( this.getUrl() == 'http://lukankin.ru/setnewcookies' && this.json )
