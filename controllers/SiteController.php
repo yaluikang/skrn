@@ -6,6 +6,7 @@ use app\models\Directors;
 use app\models\MovieDirectors;
 use app\models\MovieInfo;
 use app\models\Movies;
+use MP\ImageOptimize\ImageOptimizerService;
 use Yii;
 use yii\web\Controller;
 
@@ -78,10 +79,11 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $movie = Movies::findOne(1);
-        $actors = $movie->actors;
-        //$actorsone = ;
-        echo json_encode( $actors,JSON_UNESCAPED_UNICODE );
+        $optimizeService = new ImageOptimizerService();
+// For folder
+        $optimizeService->optimizeFolder('@webroot/web/images');
+// For image
+        $optimizeService->optimizeFolder('@webroot/web/images/posters/TrueBlood.jpg');
     }
 
     //Ajax
