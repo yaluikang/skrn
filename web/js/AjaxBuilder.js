@@ -96,7 +96,9 @@ class AjaxBuilder extends Site
     }
 
     controllerOfActions()
-    {/*
+    {
+        console.log( this.getUrl());
+        /*
         if( this.getUrl() == 'http://lukankin.ru/setnewcookies' && this.json )
         {
             this.json = JSON.parse( this.json );
