@@ -223,7 +223,7 @@ use yii\helpers\Url;
                 <div class="item-listing-container-skrn">
                     <a href="<?php echo Url::to(['site/dashboard-movie-profile?id=1']); ?>"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
                     <div class="item-listing-text-skrn">
-                        <div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">The Wild Things Are</a></h6>
+                        <div class="item-listing-text-skrn-vertical-align"><h6><a href="<?php echo Url::to(['site/dashboard-movie-profile?id=1']); ?>">The Wild Things Are</a></h6>
                             <div
                                 class="circle-rating-pro"
                                 data-value="0.86"
