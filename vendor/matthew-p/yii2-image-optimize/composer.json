@@ -1,0 +1,22 @@
+{
+    "name": "matthew-p/yii2-image-optimize",
+    "description": "Very simple extension for optimize your folders with images or just images",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","images","optimize","controller","folders"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Matthew Patell",
+            "email": "lukomi@mail.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "ps/image-optimizer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MP\\ImageOptimize\\": ""
+        }
+    }
+}

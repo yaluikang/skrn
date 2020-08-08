@@ -17,9 +17,9 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
@@ -65,6 +65,8 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
             'Symfony\\Contracts\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\String\\' => 25,
+            'Symfony\\Component\\Process\\' => 26,
+            'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\DomCrawler\\' => 29,
@@ -74,6 +76,7 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
@@ -82,6 +85,10 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
         'O' => 
         array (
             'Opis\\Closure\\' => 13,
+        ),
+        'M' => 
+        array (
+            'MP\\ImageOptimize\\' => 17,
         ),
         'G' => 
         array (
@@ -204,6 +211,14 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
+        ),
+        'Symfony\\Component\\OptionsResolver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/options-resolver',
+        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -228,6 +243,10 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -247,6 +266,10 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
+        ),
+        'MP\\ImageOptimize\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthew-p/yii2-image-optimize',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -289,6 +312,13 @@ class ComposerStaticInit9bfe514cbfd0b8e58d67ab29208216fb
     );
 
     public static $prefixesPsr0 = array (
+        'I' => 
+        array (
+            'ImageOptimizer' => 
+            array (
+                0 => __DIR__ . '/..' . '/ps/image-optimizer/src',
+            ),
+        ),
         'H' => 
         array (
             'HTMLPurifier' => 

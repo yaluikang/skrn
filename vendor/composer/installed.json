@@ -66,7 +66,7 @@
         "version_normalized": "3.4.1.0",
         "source": {
             "type": "git",
-            "url": "git@github.com:twbs/bootstrap.git",
+            "url": "https://github.com/twbs/bootstrap.git",
             "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
         },
         "dist": {
@@ -89,7 +89,7 @@
         "version_normalized": "3.3.11.0",
         "source": {
             "type": "git",
-            "url": "git@github.com:RobinHerbots/Inputmask.git",
+            "url": "https://github.com/RobinHerbots/Inputmask.git",
             "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
         },
         "dist": {
@@ -112,7 +112,7 @@
         "version_normalized": "3.4.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/jquery/jquery-dist.git",
+            "url": "git@github.com:jquery/jquery-dist.git",
             "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
         },
         "dist": {
@@ -132,7 +132,7 @@
         "version_normalized": "1.3.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/bestiejs/punycode.js.git",
+            "url": "git@github.com:bestiejs/punycode.js.git",
             "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
         },
         "dist": {
@@ -1134,6 +1134,53 @@
         ]
     },
     {
+        "name": "matthew-p/yii2-image-optimize",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MatthewPattell/yii2-image-optimize.git",
+            "reference": "7afc3503675c433a1e3d60debe40ad486633a816"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/MatthewPattell/yii2-image-optimize/zipball/7afc3503675c433a1e3d60debe40ad486633a816",
+            "reference": "7afc3503675c433a1e3d60debe40ad486633a816",
+            "shasum": ""
+        },
+        "require": {
+            "ps/image-optimizer": "*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2017-12-27T15:19:10+00:00",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MP\\ImageOptimize\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Matthew Patell",
+                "email": "lukomi@mail.ru"
+            }
+        ],
+        "description": "Very simple extension for optimize your folders with images or just images",
+        "keywords": [
+            "controller",
+            "extension",
+            "folders",
+            "images",
+            "optimize",
+            "yii2"
+        ]
+    },
+    {
         "name": "myclabs/deep-copy",
         "version": "1.10.1",
         "version_normalized": "1.10.1.0",
@@ -1974,6 +2021,59 @@
         ]
     },
     {
+        "name": "ps/image-optimizer",
+        "version": "2.0.2",
+        "version_normalized": "2.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/psliwa/image-optimizer.git",
+            "reference": "a4b53744b8cf83d018adcc03464fbd226a4079fd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/psliwa/image-optimizer/zipball/a4b53744b8cf83d018adcc03464fbd226a4079fd",
+            "reference": "a4b53744b8cf83d018adcc03464fbd226a4079fd",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1",
+            "psr/log": "^1.0",
+            "symfony/options-resolver": "~3.3 | ~4.0 | ~5.0",
+            "symfony/process": "~3.3 | ~4.0 | ~5.0"
+        },
+        "require-dev": {
+            "ext-gd": "*",
+            "phpunit/phpunit": "^7.0"
+        },
+        "time": "2020-01-11T21:47:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ImageOptimizer": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Piotr Sliwa",
+                "email": "peter.pl7@gmail.com"
+            }
+        ],
+        "description": "Image optimization / compression library. This library is able to optimize png, jpg and gif files in very easy and handy way. It uses optipng, pngquant, pngcrush, pngout, gifsicle, jpegoptim and jpegtran tools.",
+        "keywords": [
+            "compression",
+            "image",
+            "image optimizer",
+            "jpegoptim",
+            "optimization",
+            "optipng"
+        ]
+    },
+    {
         "name": "psr/container",
         "version": "1.0.0",
         "version_normalized": "1.0.0.0",
@@ -2122,6 +2222,55 @@
             "psr-7",
             "request",
             "response"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.1.3",
+        "version_normalized": "1.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2020-03-23T09:12:05+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
         ]
     },
     {
@@ -3459,6 +3608,78 @@
         ]
     },
     {
+        "name": "symfony/options-resolver",
+        "version": "v5.1.3",
+        "version_normalized": "5.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/options-resolver.git",
+            "reference": "9ff59517938f88d90b6e65311fef08faa640f681"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/options-resolver/zipball/9ff59517938f88d90b6e65311fef08faa640f681",
+            "reference": "9ff59517938f88d90b6e65311fef08faa640f681",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.2.5",
+            "symfony/deprecation-contracts": "^2.1",
+            "symfony/polyfill-php80": "^1.15"
+        },
+        "time": "2020-07-12T12:58:00+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\OptionsResolver\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony OptionsResolver Component",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "config",
+            "configuration",
+            "options"
+        ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
         "name": "symfony/polyfill-ctype",
         "version": "v1.17.1",
         "version_normalized": "1.17.1.0",
@@ -4155,6 +4376,72 @@
             "portable",
             "shim"
         ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "symfony/process",
+        "version": "v5.1.3",
+        "version_normalized": "5.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/process.git",
+            "reference": "1864216226af21eb76d9477f691e7cbf198e0402"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/process/zipball/1864216226af21eb76d9477f691e7cbf198e0402",
+            "reference": "1864216226af21eb76d9477f691e7cbf198e0402",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.2.5",
+            "symfony/polyfill-php80": "^1.15"
+        },
+        "time": "2020-07-23T08:36:24+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Process\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "https://symfony.com",
         "funding": [
             {
                 "url": "https://symfony.com/sponsor",

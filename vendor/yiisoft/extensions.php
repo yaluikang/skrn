@@ -48,4 +48,13 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'matthew-p/yii2-image-optimize' => 
+  array (
+    'name' => 'matthew-p/yii2-image-optimize',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@MP/ImageOptimize' => $vendorDir . '/matthew-p/yii2-image-optimize',
+    ),
+  ),
 );
