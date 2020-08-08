@@ -258,36 +258,7 @@ $directorsone = $directors[0]->Name;
         <div class="movie-details-section">
             <h2>The Cast</h2>
             <div id="actors" class="row">
-                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="item-listing-container-skrn">
-                        <a href="#!"><img src="http://via.placeholder.com/507x672" alt="Cast"></a>
-                        <div class="item-listing-text-skrn item-listing-movie-casting">
-                            <h6><a href="#!">Robert Downey Jr.</a></h6>
-                            <div class="movie-casting-sub-title">Tony Stark</div>
-                        </div><!-- close .item-listing-text-skrn -->
-                    </div><!-- close .item-listing-container-skrn -->
-                </div><!-- close .col -->
 
-                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="item-listing-container-skrn">
-                        <a href="#!"><img src="http://via.placeholder.com/507x672" alt="Cast"></a>
-                        <div class="item-listing-text-skrn item-listing-movie-casting">
-                            <h6><a href="#!">Scarlett Johansson</a></h6>
-                            <div class="movie-casting-sub-title">Black Widow</div>
-                        </div><!-- close .item-listing-text-skrn -->
-                    </div><!-- close .item-listing-container-skrn -->
-                </div><!-- close .col -->
-
-                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="item-listing-container-skrn">
-                        <a href="#!"><img src="http://via.placeholder.com/507x672" alt="Cast"></a>
-                        <div class="item-listing-text-skrn item-listing-movie-casting">
-                            <h6><a href="#!">Chris Hemsworth
-                                    Thor</a></h6>
-                            <div class="movie-casting-sub-title">Tony Stark</div>
-                        </div><!-- close .item-listing-text-skrn -->
-                    </div><!-- close .item-listing-container-skrn -->
-                </div><!-- close .col -->
 
             </div><!-- close .row -->
         </div><!-- close .movie-details-section -->
