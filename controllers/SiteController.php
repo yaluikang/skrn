@@ -84,4 +84,18 @@ class SiteController extends Controller
         echo json_encode( $actors,JSON_UNESCAPED_UNICODE );
     }
 
+    //Ajax
+
+    public function actionGetActors( $movieid )
+    {
+        $movie = Movies::findOne( $movieid );
+        $count = count( $movie->actors );
+        $actors = array();
+        for( $i = 0; $i < $count; $i++ )
+        {
+            $actors[$i] = (($movie->actors)[$i])->Name;
+        }
+        echo json_encode( $actors, JSON_UNESCAPED_UNICODE );
+    }
+
 }
