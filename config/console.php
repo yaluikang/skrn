@@ -35,6 +35,24 @@ $config = [
         ],
     ],
     */
+    'controllerMap' => [
+        'image-optimize' => [
+            'class'           => ImageOptimizeController::class,
+            'log'             => YII_DEBUG,
+            'imageExtensions' => [
+                ImageOptimizerService::IMAGE_PNG, ImageOptimizerService::IMAGE_JPG, ImageOptimizerService::IMAGE_JPEG,
+            ],
+            'folders'         => [ // Add your folders for images optimize
+                '@webroot/web/images'/*,
+                '@webroot/web/images' => [ // with options
+                    'execlude' => [ // Exclude subfolders or files
+                        '@webroot/web/uploads/test/subfolder',
+                        '@webroot/web/uploads/test/file.png', // Filename WITH PATH
+                    ]
+                ],*/
+            ],
+        ],
+    ]
 ];
 
 if (YII_ENV_DEV) {
