@@ -1,5 +1,10 @@
 <?php
+
+$this->registerJsFile('js/Movie-profile.js', ['depends' => [\app\assets\DashboardAsset::class]]);
+
+
 $name = $movieInfo->Name;
+$id = $movieInfo->Id;
 $resolution = $movieInfo->Resolution;
 $ageLimit = $movieInfo->Age_limit;
 $releaseDate = $movieInfo->Release_date;
@@ -8,7 +13,7 @@ $storyline = $movieInfo->Storyline;
 $directors = $movieInfo->directors;
 $directorsone = $directors[0]->Name;
 ?>
-<div id="content-sidebar-pro">
+<div id="content-sidebar-pro" data-movie-id="<?php echo $id; ?>">
 
     <div id="content-sidebar-image">
         <img src="http://via.placeholder.com/450x620" alt="Movie Poster">
