@@ -100,6 +100,7 @@ class AjaxBuilder extends Site
         //http://lukankin.ru/getactors?movieid=1
         if( this.getUrl() == (this.getUrl()).match(/http:\/\/lukankin\.ru\/getactors.*/))
         {
+            this.addActors( this.json, '#actors');
             console.log('YES');
         }
         /*

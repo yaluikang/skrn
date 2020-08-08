@@ -27,6 +27,56 @@ class Site
         }
     }
 
+    addActors( data, element )
+    {
+        let $json = $.parseJSON( data );
+        for( let $i = 0; $i < $json.length; $i++ )
+        {
+            let $posterDiv = $('<div>', {
+                class: 'col-12 col-md-6 col-lg-6 col-xl-4'
+            });
+            $posterDiv.appendTo( element );
+            let $itemDiv = $('<div>', {
+                class: 'item-listing-container-skrn'
+            });
+            $itemDiv.appendTo( $posterDiv );
+            let $itemA = $('<a>', {
+                href: '#!',
+            });
+            $itemA.appendTo( $itemDiv );
+            let $posterImg = $('<img>', {
+                src: "http://via.placeholder.com/507x672",
+                alt: 'Cast'
+            });
+            $posterImg.appendTo( $itemA );
+            let $actorDiv = $('<div>', {
+                class: "item-listing-text-skrn item-listing-movie-casting"
+            });
+            $actorDiv.appendTo( $itemDiv );
+            let $actorName = $('<h6>', {
+            });
+            $actorName.appendTo( $actorDiv );
+            let $actorNameA = $('<a>', {
+                href: "#!",
+                text: $json[$i]
+            });
+            $actorNameA.appendTo( $actorName );
+            let $actorCastDiv = $('<div>', {
+                class: "movie-casting-sub-title",
+                text: "Cast"
+            });
+            $actorCastDiv.appendTo( $actorDiv );
+        }
+        /*<div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="item-listing-container-skrn">
+                        <a href="#!"><img src="http://via.placeholder.com/507x672" alt="Cast"></a>
+                        <div class="item-listing-text-skrn item-listing-movie-casting">
+                            <h6><a href="#!">Robert Downey Jr.</a></h6>
+                            <div class="movie-casting-sub-title">Tony Stark</div>
+                        </div><!-- close .item-listing-text-skrn -->
+                    </div><!-- close .item-listing-container-skrn -->
+                </div><!-- close .col -->*/
+    }
 
     addMovies( data, element )
     {
