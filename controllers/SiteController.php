@@ -85,6 +85,7 @@ class SiteController extends Controller
     {
         $movieInfo = new MovieInfo('skrn');
         $movieInfo = $movieInfo->getInfoForMovie(1);
+        echo json_encode( $movieInfo, JSON_UNESCAPED_UNICODE );
     }
 
     //Ajax
