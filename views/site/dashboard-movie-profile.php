@@ -4,18 +4,6 @@ $this->registerJsFile('js/Site.js', ['depends' => [\app\assets\DashboardAsset::c
 $this->registerJsFile('js/AjaxBuilder.js', ['depends' => [\app\assets\DashboardAsset::class]]);
 $this->registerJsFile('js/Movie-profile.js', ['depends' => [\app\assets\DashboardAsset::class]]);
 
-/*
-$name = $movieInfo->Name;
-$id = $movieInfo->Id;
-$previewLink = $movieInfo->Preview_link;
-$posterLink = $movieInfo->Poster_link;
-$resolution = $movieInfo->Resolution;
-$ageLimit = $movieInfo->Age_limit;
-$releaseDate = $movieInfo->Release_date;
-$length = $movieInfo->Length;
-$storyline = $movieInfo->Storyline;
-$directors = $movieInfo->directors;
-$directorsone = $directors[0]->Name;*/
 
 ?>
 <div id="content-sidebar-pro" data-movie-id="<?php echo $movieInfo['Id'] ; ?>">
