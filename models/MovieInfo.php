@@ -15,7 +15,7 @@ class MovieInfo extends QueryBuilder
         //Отдать json-obj по фильму
         $movieInfo = Movies::findOne($id);
         $movieInfoArr = array();
-        $movieInfo['Id'] = $movieInfo->Id;
+        $movieInfoArr['Id'] = $movieInfo->Id;
         $movieInfoArr['Name'] = $movieInfo->Name;
         $movieInfoArr['previewLink'] = $movieInfo->Preview_link;
         $movieInfoArr['posterLink'] = $movieInfo->Poster_link;
