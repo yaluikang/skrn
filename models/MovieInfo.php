@@ -17,7 +17,7 @@ class MovieInfo extends QueryBuilder
         $movieInfoArr = array();
         $movieInfoArr['Name'] = $movieInfo->Name;
         $movieInfoArr['previewLink'] = $movieInfo->Preview_link;
-        $movieInfoArr['posterLink'] = $movieInfo->Poster_Link;
+        $movieInfoArr['posterLink'] = $movieInfo->Poster_link;
         $movieInfoArr['resolution'] = $movieInfo->Resolution;
         $movieInfoArr['ageLimit'] = $movieInfo->Age_limit;
         $movieInfoArr['releaseDate'] = $movieInfo->Release_date;
