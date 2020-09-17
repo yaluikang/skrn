@@ -55,7 +55,7 @@ class MovieInfo extends QueryBuilder
         $directors = array();
         for( $i = 0; $i < $count; $i++ )
         {
-            $actors[$i] = (($movie->directors)[$i])->Name;
+            $directors[$i] = (($movie->directors)[$i])->Name;
         }
         return $directors;
     }
