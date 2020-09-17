@@ -79,7 +79,7 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $movieInfo = new MovieInfo();
+        $movieInfo = new MovieInfo('skrn');
         $movieInfo = $movieInfo->getInfoForMovie(1);
     }
 
