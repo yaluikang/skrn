@@ -131,7 +131,7 @@ $directorsone = $directors[0]->Name;*/
 
 <main id="col-main-with-sidebar">
 
-    <div id="movie-detail-header-pro" style="background-image:url('<?php echo 'images/previews/' . $previewLink ?>')">
+    <div id="movie-detail-header-pro" style="background-image:url('<?php echo 'images/previews/' . $movieInfo['previewLink'] ?>')">
 
         <div class="progression-studios-slider-more-options">
             <i class="fas fa-ellipsis-h"></i>
