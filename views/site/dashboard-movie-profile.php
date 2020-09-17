@@ -18,32 +18,32 @@ $directors = $movieInfo->directors;
 $directorsone = $directors[0]->Name;
 
 ?>
-<div id="content-sidebar-pro" data-movie-id="<?php echo $id; ?>">
+<div id="content-sidebar-pro" data-movie-id="<?php echo $movieInfo['Id'] ; ?>">
 
     <div id="content-sidebar-image">
-        <img src="<?php echo 'images/posters/' . $posterLink ?>" alt="Movie Poster">
+        <img src="<?php echo 'images/posters/' . $movieInfo['posterLink']; ?>" alt="Movie Poster">
     </div>
 
     <div class="content-sidebar-section">
-        <h2 class="content-sidebar-sub-header"><?php echo $name; ?></h2>
+        <h2 class="content-sidebar-sub-header"><?php echo $movieInfo['Name']; ?></h2>
         <ul class="progression-studios-slider-rating">
-            <li><?php echo $ageLimit; ?></li><li><?php echo $resolution; ?></li>
+            <li><?php echo $movieInfo['ageLimit']; ?></li><li><?php echo $movieInfo['resolution']; ?></li>
         </ul>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Release Date</h4>
-        <div class="content-sidebar-short-description"><?php echo $releaseDate; ?></div>
+        <div class="content-sidebar-short-description"><?php echo $movieInfo['releaseDate']; ?></div>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Length</h4>
-        <div class="content-sidebar-short-description"><?php echo $length; ?></div>
+        <div class="content-sidebar-short-description"><?php echo $movieInfo['length']; ?></div>
     </div><!-- close .content-sidebar-section -->
 
     <div class="content-sidebar-section">
         <h4 class="content-sidebar-sub-header">Director</h4>
-        <div class="content-sidebar-short-description"><?php echo $directorsone; ?></div>
+        <div class="content-sidebar-short-description"><?php echo $movieInfo['directors']; ?></div>
     </div><!-- close .content-sidebar-section -->
 
 
@@ -255,7 +255,7 @@ $directorsone = $directors[0]->Name;
 
         <div class="movie-details-section">
             <h2>Storyline</h2>
-            <p><?php echo $storyline; ?> </p>
+            <p><?php echo $movieInfo['storyline']; ?> </p>
         </div><!-- close .movie-details-section -->
 
         <div class="movie-details-section">

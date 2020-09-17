@@ -15,6 +15,7 @@ class MovieInfo extends QueryBuilder
         //Отдать json-obj по фильму
         $movieInfo = Movies::findOne($id);
         $movieInfoArr = array();
+        $movieInfo['Id'] = $movieInfo->Id;
         $movieInfoArr['Name'] = $movieInfo->Name;
         $movieInfoArr['previewLink'] = $movieInfo->Preview_link;
         $movieInfoArr['posterLink'] = $movieInfo->Poster_link;
@@ -25,8 +26,7 @@ class MovieInfo extends QueryBuilder
         $movieInfoArr['storyline'] = $movieInfo->Storyline;
         $movieInfoArr['directors'] = MovieInfo::getDirectors($id);
         $movieInfoArr['actors'] = MovieInfo::getActors($id);
-        //return $movieInfoArr;
-        echo json_encode( $movieInfoArr, JSON_UNESCAPED_UNICODE );
+        return $movieInfoArr;
     }
 
     public static function getGenres( $id )
