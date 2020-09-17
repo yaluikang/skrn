@@ -79,11 +79,8 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $optimizeService = new ImageOptimizerService();
-// For folder
-        $optimizeService->optimizeFolder('@webroot/web/images');
-// For image
-        $optimizeService->optimizeFolder('@webroot/web/images/posters/TrueBlood.jpg');
+        $movieInfo = new MovieInfo();
+        $movieInfo = $movieInfo->getInfoForMovie(1);
     }
 
     //Ajax
