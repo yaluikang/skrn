@@ -11,6 +11,15 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'modules'=>array(
+        'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'76Agiheg',
+            // 'ipFilters'=>array(…список IP…),
+            'newFileMode'=>0666,
+            'newDirMode'=>0777,
+        ),
+    ),
     'components' => [
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -76,11 +85,11 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['217.197.203.115', '::1'],
+        'allowedIPs' => ['217.197.203.115', '::1']/*,
         'password'=>'76Agiheg',
         // 'ipFilters'=>array(…список IP…),
         'newFileMode'=>0666,
-        'newDirMode'=>0777,
+        'newDirMode'=>0777,*/
     ];
 }
 
