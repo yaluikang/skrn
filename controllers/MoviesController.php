@@ -14,6 +14,7 @@ use yii\filters\VerbFilter;
  */
 class MoviesController extends Controller
 {
+    public $layout = 'main';
     /**
      * {@inheritdoc}
      */
