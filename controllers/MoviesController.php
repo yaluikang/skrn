@@ -10,9 +10,9 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * MoviesHasGenresController implements the CRUD actions for MoviesHasGenres model.
+ * MoviesController implements the CRUD actions for MoviesHasGenres model.
  */
-class MoviesHasGenresController extends Controller
+class MoviesController extends Controller
 {
     /**
      * {@inheritdoc}
