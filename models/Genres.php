@@ -48,4 +48,10 @@ class Genres extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Movies::class, ['Genre_id' => 'Id'])->viaTable('Movies_has_genres', ['Id' => 'Movie_id']);
     }
+
+    public static function searchByGenre()
+    {
+        $movies = Genres::find()->where(['Name'=>'боевик']);
+        return (($movies->movies)[0])->Name;
+    }
 }

@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Directors;
+use app\models\Genres;
 use app\models\MovieDirectors;
 use app\models\MovieInfo;
 use app\models\Movies;
@@ -87,9 +88,10 @@ class SiteController extends Controller
         $movieInfo = $movieInfo->getInfoForMovie(1);
         echo json_encode( $movieInfo, JSON_UNESCAPED_UNICODE );*/
 
-        $movie = Movies::findOne( 1 );
+        //$movie = Movies::findOne( 1 );
+        $movie = Genres::searchByGenre();
 
-        echo json_encode( (($movie->genres)[0])->Name, JSON_UNESCAPED_UNICODE );
+        echo json_encode( $movie, JSON_UNESCAPED_UNICODE );
     }
 
     //Ajax
