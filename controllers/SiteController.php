@@ -97,10 +97,10 @@ class SiteController extends Controller
 
         //$movie = Genres::findOne(2);
 
-        $movies = Genres::find()->where(['Name' => 'боевик'])->movies->createCommand()->sql;
+        $movies = Genres::find()->where(['Name' => 'боевик'])->all();
         //return (($movies->movies)[0])->Name;
 
-        echo json_encode( $movies, JSON_UNESCAPED_UNICODE );
+        echo json_encode( (($movies->movies)[0])->Name, JSON_UNESCAPED_UNICODE );
     }
 
     //Ajax
