@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Actors;
 use app\models\Directors;
 use app\models\Genres;
 use app\models\MovieDirectors;
@@ -94,7 +95,7 @@ class SiteController extends Controller
         /*$movies = Genres::findOne(2);
         $movie = (($movies->movies)[0])->Name;*/
 
-        $movie = Genres::findOne(2);
+        $movie = Actors::findOne(1);
 
         echo json_encode( (($movie->movies)[0])->Name, JSON_UNESCAPED_UNICODE );
     }
