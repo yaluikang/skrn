@@ -90,14 +90,17 @@ class SiteController extends Controller
         echo json_encode( $movieInfo, JSON_UNESCAPED_UNICODE );*/
 
         //$movie = Movies::findOne( 1 );
-        $movie = Genres::searchByGenre();
+        //$movie = Genres::searchByGenre();
 
         /*$movies = Genres::findOne(2);
         $movie = (($movies->movies)[0])->Name;*/
 
         //$movie = Genres::findOne(2);
 
-        echo json_encode( $movie, JSON_UNESCAPED_UNICODE );
+        $movies = Genres::find()->where(['Name' => 'боевик']);
+        //return (($movies->movies)[0])->Name;
+
+        echo json_encode( (($movies->movies)[0])->Name, JSON_UNESCAPED_UNICODE );
     }
 
     //Ajax
