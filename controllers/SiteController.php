@@ -88,13 +88,13 @@ class SiteController extends Controller
         $movieInfo = $movieInfo->getInfoForMovie(1);
         echo json_encode( $movieInfo, JSON_UNESCAPED_UNICODE );*/
 
-        //$movie = Movies::findOne( 1 );
+        $movie = Movies::findOne( 1 );
         //$movie = Genres::searchByGenre();
 
-        $movies = Genres::findOne(2);
-        $movie = (($movies->movies)[0])->Name;
+        /*$movies = Genres::findOne(2);
+        $movie = (($movies->movies)[0])->Name;*/
 
-        echo json_encode( $movie, JSON_UNESCAPED_UNICODE );
+        echo json_encode( (($movie->genres)[0])->Name, JSON_UNESCAPED_UNICODE );
     }
 
     //Ajax
