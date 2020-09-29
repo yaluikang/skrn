@@ -46,7 +46,7 @@ class Genres extends \yii\db\ActiveRecord
 
     public function getMovies()
     {
-        return $this->hasMany(Movies::class, ['Genre_id' => 'Id'])->viaTable('Movies_has_genres', ['Id' => 'Movie_id']);
+        return $this->hasMany(Movies::class, ['Id' => 'Movie_id'])->viaTable('Movies_has_genres', ['Genre_id' => 'Id']);
     }
 
     public static function searchByGenre()
