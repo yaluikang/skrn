@@ -24,4 +24,9 @@ class Movies extends ActiveRecord
     {
         return $this->hasMany(Actors::class, ['Id' => 'Actor_id'])->viaTable('Movie_has_actors', ['Movie_id' => 'Id']);
     }
+
+    public function getGenres()
+    {
+        return $this->hasMany(Genres::class, ['Id' => 'Genre_id'])->viaTable('Movies_has_genres', ['Movie_id' => 'Id']);
+    }
 }

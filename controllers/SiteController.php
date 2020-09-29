@@ -83,9 +83,13 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $movieInfo = new MovieInfo('skrn');
+        /*$movieInfo = new MovieInfo('skrn');
         $movieInfo = $movieInfo->getInfoForMovie(1);
-        echo json_encode( $movieInfo, JSON_UNESCAPED_UNICODE );
+        echo json_encode( $movieInfo, JSON_UNESCAPED_UNICODE );*/
+
+        $movie = Movies::findOne( 1 );
+
+        echo json_encode( (($movie->genres)[0])->Name, JSON_UNESCAPED_UNICODE );
     }
 
     //Ajax
