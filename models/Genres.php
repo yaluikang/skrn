@@ -51,7 +51,7 @@ class Genres extends \yii\db\ActiveRecord
 
     public static function searchByGenre()
     {
-        $movies = Genres::find()->where(['Name'=>'боевик']);
+        $movies = Genres::find()->where(['Name'=>'боевик'])->one();
         return (($movies->movies)[0])->Name;
     }
 }
